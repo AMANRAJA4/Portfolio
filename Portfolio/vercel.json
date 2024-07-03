@@ -1,5 +1,13 @@
 {
   "version": 2,
+
+  "rewrites":[
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ] ,
+
   "builds": [
     {
       "src": "Portfolio/wsgi.py",
@@ -14,6 +22,7 @@
       }
     }
   ],
+
   "routes": [
     {
       "src": "/static/(.*)",
